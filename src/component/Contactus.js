@@ -43,17 +43,7 @@ const ContactUs = () => {
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900">
       
-      {/* NAVIGATION */}
-      <nav className="sticky top-0 z-50 flex items-center justify-between bg-white px-8 py-5 md:px-16 border-b border-slate-100 shadow-sm">
-        <div className="flex items-center gap-4 cursor-pointer" onClick={() => navigate("/")}>
-          <img 
-            src="https://res.cloudinary.com/dvuq6vmiy/image/upload/v1768210149/Gemini_Generated_Image_hp36h8hp36h8hp36_rfreh1.png" 
-            alt="Energy DAO Logo" 
-            className="h-10 w-auto"
-          />
-          <span className="text-xl font-black tracking-tighter text-[#0A3161]">ENERGY DAO</span>
-        </div>
-      </nav>
+     
 
       <div className="mx-auto max-w-7xl px-8 py-24 grid md:grid-cols-2 gap-20 items-center">
         
