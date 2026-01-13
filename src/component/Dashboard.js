@@ -15,21 +15,35 @@ const EnergyLandingPage = () => {
   ];
 
   const newsData = [
-    {
-      title: "Grid Modernization",
-      desc: "New strategic funding for rural energy hubs in the Midwest infrastructure project.",
-      img: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=800"
+  
+       {
+      id: 1,
+      category: "Geopolitics",
+      title: "Project Orinoco: $100B Capital Call for Venezuela Oil",
+      date: "Jan 12, 2026",
+      desc: "Secretary Marco Rubio confirms a $100 billion investment timeline to rebuild Venezuela's deteriorated oil infrastructure using US-led private capital.",
+      link: "https://www.webpronews.com/exxon-ceo-deems-venezuela-uninvestable-amid-trumps-100b-oil-call/",
+      img: "https://images.unsplash.com/photo-1678532685208-54acdd41187d?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
-    {
-      title: "The DAO Advantage",
-      desc: "How decentralized capital is significantly outperforming traditional venture capital.",
-      img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
+     {
+      id: 51,
+      category: "Crypto Policy",
+      title: "Trump Signals Full Support for Pro-Crypto Framework",
+      date: "Jan 13, 2026",
+      desc: "President Trump reiterates support for decentralized finance, Bitcoin, and blockchain innovation as pillars of US economic sovereignty.",
+      link: "https://www.pillsburylaw.com/en/news-and-insights/cryptocurrency-digital-assets-trump.html",
+      img: "https://images.unsplash.com/photo-1621761191319-c6fb62004040?q=80&w=800"
     },
-    {
-      title: "2026 Projections",
-      desc: "On track to save an additional 50 American energy firms by the end of Q4.",
-      img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
-    }
+{
+      id: 46,
+      category: "Fossil Fuel",
+      title: "Natural Gas Prices Double Long-Term Outlook",
+      date: "Jan 12, 2026",
+      desc: "Market analysts predict a decade-long bull run for US gas as coal plants are replaced by gas-fired generation.",
+      link: "https://naturalgasintel.com/news/banks-lower-26-natural-gas-forecast-modestly-but-long-term-price-confidence-holds/",
+      img: "https://plus.unsplash.com/premium_photo-1742496566836-b1e179c18465?q=80&w=1325&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+   
   ];
 
   return (
@@ -66,14 +80,13 @@ const EnergyLandingPage = () => {
           <div className="order-2 md:order-1">
             <span className="text-sm font-bold uppercase tracking-[0.2em] text-[#B31942]">The Program</span>
             <h2 className="mt-4 text-4xl font-bold leading-tight text-[#0A3161]">
-              Infrastructure Recovery & Strategic Scaling
+              Infrastructure Recovery & Energy Capacity Expansion
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-slate-600">
-              Energy DAO is a decentralized investment program designed to strengthen the full spectrum of American power. From traditional oil and gas to nuclear, solar, and advanced battery manufacturing, we leverage collective intelligence to fund the projects that define our national security.
-            </p>
+          Energy DAO is a decentralized investment program established to strengthen the full spectrum of American energy infrastructure. Spanning traditional oil and gas, nuclear energy, solar generation, and advanced battery manufacturing, the program enables coordinated capital deployment into projects essential to U.S. national security, economic resilience, and long-term energy independence.   </p>
             <p className="mt-4 text-lg leading-relaxed text-slate-600">
-          Supported by the U.S. State Department in partnership with the U.S. Department of Energy, this initiative ensures domestic energy sovereignty and the reshoring of critical infrastructure. By bridging the gap between high-level innovation and physical assets, we provide the institutional capital necessary to scale and secure a dominant American energy landscape</p>
-            
+        Authorized and supported by the U.S. Department of State, in partnership with the U.S. Department of Energy, Energy DAO advances domestic energy sovereignty and the reshoring of critical infrastructure. By connecting innovation with physical asset development, the program mobilizes institutional-scale investment to expand, secure, and modernize America’s energy system.
+        </p>    
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="p-5 rounded-xl bg-slate-50 border border-slate-100 hover:border-[#B31942] transition-colors">
                 <div className="h-8 w-8 mb-3 flex items-center justify-center rounded-full bg-[#0A3161] text-white text-[10px] font-bold">GOV</div>
@@ -96,14 +109,7 @@ const EnergyLandingPage = () => {
               className="relative z-10 rounded-3xl shadow-2xl w-full h-[550px] object-cover" 
             />
             {/* Government Seal & Program Badge */}
-            <div className="absolute top-6 left-6 z-20 bg-white/90 backdrop-blur-md p-3 rounded-xl shadow-lg border border-slate-200">
-              <div className="flex items-center gap-2">
-                <div className="h-6 w-6 rounded-full bg-[#0A3161] flex items-center justify-center">
-                  <span className="text-[8px] font-bold text-white">US</span>
-                </div>
-                <p className="text-[10px] font-black text-[#0A3161] uppercase tracking-tighter">Strategic State Initiative</p>
-              </div>
-            </div>
+          
           </div>
         </div>
       </section>
@@ -136,21 +142,28 @@ const EnergyLandingPage = () => {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 flex items-end justify-between">
             <h2 className="text-3xl font-bold text-[#0A3161]">News</h2>
-            <a href="#" className="font-bold text-[#0A3161] hover:text-[#B31942] transition-colors">
+            <p onClick={() => navigate("/news")} className="font-bold text-[#0A3161] hover:text-[#B31942] transition-colors">
               Read More →
-            </a>
+            </p>
           </div>
           
           <div className="grid gap-8 md:grid-cols-3">
-            {newsData.map((news, idx) => (
-              <div key={idx} className="bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                <img src={news.img} alt={news.title} className="h-56 w-full object-cover" />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-[#0A3161]">{news.title}</h3>
-                  <p className="mt-3 text-slate-500 text-sm leading-relaxed">{news.desc}</p>
-                </div>
-              </div>
-            ))}
+           {newsData.map((news, idx) => (
+  <a
+    key={idx}
+    href={news.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition-shadow cursor-pointer"
+  >
+    <img src={news.img} alt={news.title} className="h-56 w-full object-cover" />
+    <div className="p-6">
+      <h3 className="text-xl font-bold text-[#0A3161]">{news.title}</h3>
+      <p className="mt-3 text-slate-500 text-sm leading-relaxed">{news.desc}</p>
+    </div>
+  </a>
+))}
+
           </div>
         </div>
       </section>

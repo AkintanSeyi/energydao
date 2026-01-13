@@ -6,6 +6,7 @@ import Pathners from "./component/Pathners";
 import Impact from "./component/Impact";
 import Contactus from "./component/Contactus";
 import Header from "./component/Header";
+import News from "./component/News";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
                   <Route path="/pathners" element={<Pathners/>} />
                    <Route path="/impact" element={<Impact/>} />
                     <Route path="/contact-us" element={<Contactus/>} />
+                      <Route path="/news" element={<News/>} />
          
       </Routes>
 

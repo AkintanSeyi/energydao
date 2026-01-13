@@ -42,17 +42,15 @@ const ContactUs = () => {
 
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900">
-      
-     
-
-      <div className="mx-auto max-w-7xl px-8 py-24 grid md:grid-cols-2 gap-20 items-center">
+          
+           <div className="mx-auto max-w-7xl px-8 py-24 grid md:grid-cols-2 gap-20 items-center">
         
         {/* LEFT SIDE: INFO */}
         <div className="space-y-8">
           <div>
             <span className="text-xs font-bold uppercase tracking-[0.4em] text-[#B31942]">Inquiry Portal</span>
             <h1 className="mt-4 text-6xl font-black text-[#0A3161] uppercase tracking-tighter leading-[0.9]">
-              Strategic <br/> Outreach
+              Energy Dao <br/> Outreach
             </h1>
             <p className="mt-8 text-lg text-slate-500 max-w-md leading-relaxed">
   Use this portal for all sector inquiries, industrial asset evaluations, and high-velocity production requests. We are currently reviewing applications for strategic capital injection and large-scale infrastructure expansion.
