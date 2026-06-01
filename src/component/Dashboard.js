@@ -270,7 +270,7 @@ const EnergyLandingPage = () => {
 
           <div className="mt-16 pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-[11px] font-bold uppercase tracking-widest text-slate-500">
-              © 2026 Energy DAO. All rights reserved.
+              © 2026 Energy DAO. All rights reserveds.
             </p>
         
           </div>
