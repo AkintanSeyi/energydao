@@ -31,7 +31,7 @@ const App = () => {
     <BrowserRouter>
       <Header />
       <Routes>
-      <Route
+      <Route  
   path="/"
   element={token ? <Navigate to="/home" replace /> : <Dashboard />}
 />

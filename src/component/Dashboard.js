@@ -197,7 +197,7 @@ const EnergyLandingPage = () => {
       {/* Stat 1: Capital */}
       <div className="text-center md:border-r border-white/10 py-8">
         <h3 className="text-6xl md:text-7xl font-black tracking-tighter text-white">
-          $1.3B
+          $200M
         </h3>
         <p className="mt-4 text-[10px] font-bold uppercase tracking-[0.3em] text-blue-200 opacity-80">
           Total Capital Deployed

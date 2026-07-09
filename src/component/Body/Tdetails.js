@@ -46,11 +46,11 @@ const email = token ? jwtDecode(token).email : "";
 
       <div className="bg-white p-8 rounded-[2rem] shadow-sm border border-gray-100">
         <h1 className="text-2xl font-black text-[#0A3161] mb-2">Payment Details</h1>
-        <p className="text-sm text-gray-500 mb-6">Please send <span className="font-bold text-[#0A3161]">${amount} USDC</span> to the address below.</p>
+        <p className="text-sm text-gray-500 mb-6">Buy Energy of <span className="font-bold text-[#0A3161]">${amount} USDC</span> </p>
 
         {/* Novice Instructions */}
        {/* Updated Novice Instructions */}
-<div className="bg-blue-50 p-4 rounded-2xl mb-6 border border-blue-100">
+{/* <div className="bg-blue-50 p-4 rounded-2xl mb-6 border border-blue-100">
   <div className="flex items-center gap-2 text-[#0A3161] mb-2">
     <FiInfo className="font-bold" />
     <span className="text-[10px] font-black uppercase">How to pay via Coinbase or other wallets</span>
@@ -62,7 +62,7 @@ const email = token ? jwtDecode(token).email : "";
     4. <b>Network:</b> Select the <b>ERC20</b> network when prompted. Double-check the address.<br/>
     5. <b>Confirm:</b> Once the transaction is sent, tap the button below.
   </p>
-</div>
+</div> */}
 
         <div className="bg-gray-50 p-4 rounded-2xl mb-6">
           <div className="flex justify-between mb-2">

@@ -5,7 +5,7 @@ const Impact = () => {
   const navigate = useNavigate();
 
   const stats = [
-    { label: "Capital Deployed", value: "$1.3B", detail: "" },
+    { label: "Capital Deployed", value: "$200M", detail: "" },
     { label: "Jobs Created", value: "12,400+", detail: "" },
     { label: "Energy Output", value: "+18%", detail: "" },
    
