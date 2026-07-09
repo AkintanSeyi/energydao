@@ -26,11 +26,15 @@ import Tdetails from "./component/Body/Tdetails";
 import Processing from "./component/Body/Processing";
 
 const App = () => {
+  const token = localStorage.getItem("token");
   return (
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Dashboard />} />
+      <Route
+  path="/"
+  element={token ? <Navigate to="/home" replace /> : <Dashboard />}
+/>
          <Route path="/home" element={<Home />} />
           <Route path="/withdraw" element={<WIthdrew />} />
         <Route path="/mission" element={<Mission />} />
