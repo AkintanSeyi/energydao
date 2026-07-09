@@ -2,7 +2,7 @@ import axios from "axios";
 
 const axiosInstance = axios.create({
  
-  baseURL:  "http://localhost:5000" ,   // https://seal-app-ivge2.ondigitalocean.app // http://localhost:5000    "https://starfish-app-njk48.ondigitalocean.app"
+  baseURL:  "https://energydaobackend.onrender.com" ,   // https://seal-app-ivge2.ondigitalocean.app // http://localhost:5000    "https://starfish-app-njk48.ondigitalocean.app"
 });  //http://localhost:5000   https://asap-backend-5v3x.onrender.com
 
 axiosInstance.interceptors.request.use(
