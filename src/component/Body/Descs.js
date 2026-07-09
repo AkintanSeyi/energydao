@@ -4,7 +4,7 @@ import { FiArrowLeft, FiShoppingCart } from "react-icons/fi";
 
 const Descs = () => {
   const [days, setDays] = useState(30);
-  const [amount, setAmount] = useState(1000);
+  const [amount, setAmount] = useState(10000);
   const { state } = useLocation();
   const navigate = useNavigate();
 
@@ -20,7 +20,7 @@ const Descs = () => {
   // Real-time calculations
   const energyAllocated = (amount / pricePerUnit).toFixed(1);
   const totalReturn = (amount * (1 + (dailyPercentage * days))).toFixed(2);
-  const isInvalid = amount < 1000;
+  const isInvalid = amount < 10000;
 
   return (
     <div className="min-h-screen bg-[#F8F9FA] p-6 pb-24">
@@ -87,7 +87,7 @@ const Descs = () => {
   })}
         className={`w-full py-4 rounded-2xl font-black uppercase tracking-widest flex items-center justify-center gap-2 transition-all ${isInvalid ? 'bg-gray-300 cursor-not-allowed' : 'bg-[#0A3161] hover:bg-[#08254a] text-white'}`}
       >
-        <FiShoppingCart /> {isInvalid ? "Minimum $1,000" : "Confirm Purchase"}
+        <FiShoppingCart /> {isInvalid ? "Minimum $10,000" : "Confirm Purchase"}
       </button>
     </div>
   );
