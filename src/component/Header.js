@@ -5,6 +5,18 @@ const Header = () => {
   const navigate = useNavigate();
   const location = useLocation(); // Hook to check which page we are on
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const token = localStorage.getItem("token");
+
+  const hiddenRoutes = [
+  "/home",
+  "/assets",
+  "/profile",
+  "/descs"
+];
+
+if (token && hiddenRoutes.includes(location.pathname)) {
+  return null;
+}
 
   const navLinks = [
     { name: 'Mission', path: '/mission' },
@@ -15,12 +27,14 @@ const Header = () => {
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-white border-b border-slate-100 transition-all duration-300">
+    {!token && ( 
+   
       <div className="max-w-7xl mx-auto px-4 md:px-16 py-4 flex justify-between items-center">
         
         {/* LEFT: Logo Section */}
-        <div 
+          <div 
           className="flex items-center gap-2 md:gap-3 cursor-pointer group" 
-          onClick={() => navigate("/")}
+        onClick={() => navigate("/")}
         >
           <img 
             src="https://res.cloudinary.com/dvuq6vmiy/image/upload/v1768210149/Gemini_Generated_Image_hp36h8hp36h8hp36_rfreh1.png" 
@@ -31,8 +45,10 @@ const Header = () => {
             ENERGY DAO
           </span>
         </div>
+        
 
         {/* CENTER/RIGHT: Desktop Nav Links */}
+      
         <div className="hidden md:flex items-center space-x-10 text-xs font-bold uppercase tracking-widest text-[#0A3161]">
           {navLinks.map((link) => {
             const isActive = location.pathname === link.path;
@@ -53,14 +69,19 @@ const Header = () => {
               </div>
             );
           })}
-          
+            <button 
+      onClick={() => navigate("/signup")} 
+      className="rounded-full bg-[#0A3161] px-6 py-2 hover:scale-105 cursor-pointer text-white font-bold text-[10px]  transition-all whitespace-nowrap"
+    >
+      Get Started  
+    </button>
           {/* THE THREE ARROWS INDICATOR - Fixed Text Based */}
           {/* <div className="flex items-center gap-0.5 border-l pl-8 border-slate-100 text-[#B31942] text-sm font-black tracking-tighter">
             <span>&rsaquo;</span><span>&rsaquo;</span><span>&rsaquo;</span>
           </div> */}
         </div>
 
-        {/* MOBILE: Toggle Button */}
+        
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)} 
           className="md:hidden p-2 text-[#0A3161] focus:outline-none"
@@ -76,16 +97,16 @@ const Header = () => {
           )}
         </button>
       </div>
-
+)}
       {/* MOBILE: Dropdown Menu */}
-      {isMenuOpen && (
+      {isMenuOpen && !token && (
         <div className="absolute top-full left-0 w-full bg-white border-b border-slate-200 shadow-xl p-8 flex flex-col gap-6 text-center md:hidden animate-in slide-in-from-top duration-300">
           {navLinks.map((link) => (
             <div key={link.name} className="flex flex-col items-center gap-1">
               <p 
-                onClick={() => {
-                  navigate(link.path);
-                  setIsMenuOpen(false);
+                onClick={() => {  
+                  navigate(link.path);   
+                  setIsMenuOpen(false);         
                 }} 
                 className={`text-xs font-bold uppercase tracking-widest cursor-pointer ${location.pathname === link.path ? 'text-[#B31942]' : 'text-[#0A3161]'}`}
               >
@@ -96,6 +117,12 @@ const Header = () => {
               )}
             </div>
           ))}
+          <button 
+   onClick={() => navigate("/signup")} 
+      className="rounded-full bg-[#0A3161] px-6 py-2 text-white font-bold text-[10px] hover:bg-[#B31942] transition-all whitespace-nowrap"
+    >
+      Get Started
+    </button>
         </div>
       )}
     </nav>

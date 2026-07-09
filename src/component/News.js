@@ -2,7 +2,328 @@ import React, { useState } from 'react';
 
 const NewsPage = () => {
  const energyNews = [
-    // --- STATE DEPT & VENEZUELA OIL RECOVERY ---
+    
+
+
+
+{
+ id: 6,
+ category: "Nuclear",
+ title: "DOE Launches Nuclear Lifecycle Innovation Campus Initiative",
+ date: "Jan 18, 2026",
+ summary: "States were invited to propose locations for advanced nuclear fuel-cycle facilities.",
+      link: "https://dwee.nebraska.gov/news-events/press-releases/nebraska-submits-information-us-doe-nuclear-lifecycle-innovation-campus-consideration",
+      image: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+{
+ id: 7,
+ category: "Investment",
+ title: "Uranium Prices Surge Above $80 Per Pound",
+ date: "Jan 18, 2026",
+ summary: "Growing nuclear demand and supply concerns pushed uranium markets higher.",
+     link: "https://www.ans.org/news/2025-11-10/article-7532/uranium-market-prices-reflect-higher-demand/",
+      image: "https://plus.unsplash.com/premium_photo-1661898205432-d648667b9c76?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+{
+ id: 8,
+ category: "Policy",
+ title: "US Expands Nuclear Fuel Supply Chain Program",
+ date: "Jan 28, 2026",
+ summary: "Federal agencies announced new measures to reduce dependence on foreign nuclear fuel sources.",
+   link: "https://www.urenco.com/news/uusa/2026/urenco-usa-plans-significant-expansion-of-us-uranium-enrichment-capacity",
+      image: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+
+},
+{
+ id: 9,
+ category: "LNG",
+ title: "US LNG Exports Begin 2026 Strong",
+ date: "Feb 02, 2026",
+ summary: "Export terminals reported robust shipments to Europe and Asia.",
+   link: "https://www.forbes.com/sites/ianpalmer/2026/05/27/exports-of-us-liquefied-natural-gas-ten-year-revolution-has-risks/",
+      image: "https://images.unsplash.com/photo-1568347877321-f8935c7dc5a3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+{
+ id: 10,
+ category: "Renewables",
+ title: "Wind Generation Sets February Output Record",
+ date: "Feb 05, 2026",
+ summary: "Strong wind conditions boosted renewable generation across multiple states.",
+    link: "https://energyefficiency.ie/blog/new-record-set-for-wind-power-generation/",
+      image: "https://images.unsplash.com/photo-1548337138-e87d889cc369?q=80&w=1196&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+
+},
+{
+ id: 11,
+ category: "Grid",
+ title: "Grid Operators Prepare for AI-Driven Power Demand",
+ date: "Feb 09, 2026",
+ summary: "Utilities announced infrastructure investments to support expanding data centers.",
+  link: "https://www.eenews.net/articles/ai-could-make-power-grid-more-efficient-if-utilities-can-persuade-regulators/",
+      image: "https://plus.unsplash.com/premium_photo-1679917152396-4b18accacb9d?q=80&w=327&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+{
+ id: 12,
+ category: "Oil",
+ title: "Permian Basin Investment Reaches New High",
+ date: "Feb 12, 2026",
+ summary: "Major producers increased spending on drilling and production projects.",
+   link: "https://www.energyindepth.org/permian-basin-stands-out-in-a-record-year-for-u-s-energy-companies/",
+      image: "https://plus.unsplash.com/premium_photo-1678167657579-a0986938f0c8?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+{
+ id: 13,
+ category: "Solar",
+ title: "Arizona Announces New Solar Manufacturing Hub",
+ date: "Feb 15, 2026",
+ summary: "The facility aims to strengthen domestic clean-energy supply chains.",
+    link: "https://www.canarymedia.com/articles/clean-energy-manufacturing/us-solar-manufacturing-in-2026",
+      image: "https://images.unsplash.com/photo-1729954924953-ff957b3e9edc?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+{
+ id: 14,
+ category: "Hydrogen",
+ title: "Green Hydrogen Projects Receive Federal Support",
+ date: "Feb 18, 2026",
+ summary: "New funding programs targeted industrial-scale hydrogen deployment.",
+     link: "https://www.bundeswirtschaftsministerium.de/Redaktion/EN/Hydrogen/Dossiers/funding-advice.html",
+      image: "https://images.unsplash.com/photo-1631304480499-b45f5e4aa882?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+{
+ id: 15,
+ category: "Nuclear",
+ title: "SMR Developers Advance Licensing Applications",
+ date: "Feb 22, 2026",
+ summary: "Several advanced reactor companies reached key regulatory milestones.",
+      link: "https://www.ans.org/news/2026-05-20/article-8057/blykalla-submits-application-for-sixsmr-site-in-sweden/",
+      image: "https://images.unsplash.com/photo-1634680722242-f8f5704ed3ac?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+
+{
+ id: 17,
+ category: "Oil & Gas",
+ title: "Gulf Coast Refiners Expand Capacity",
+ date: "Mar 02, 2026",
+ summary: "Refining companies announced upgrades to improve fuel production.",
+      link: "https://www.spglobal.com/energy/en/news-research/latest-news/crude-oil/012126-us-gulf-coast-refiners-seen-benefiting-from-increased-use-of-heavy-venezuelan-crude",
+      image: "https://plus.unsplash.com/premium_photo-1709316145478-c31161a5c913?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+
+
+{
+ id: 20,
+ category: "Nuclear",
+ title: "Advanced Reactor Fuel Supply Initiative Expanded",
+ date: "Mar 12, 2026",
+ summary: "DOE announced additional support for HALEU production.",
+      link: "https://www.spglobal.com/energy/en/news-research/latest-news/electric-power/052726-us-doe-negotiating-with-reactor-developers-to-use-surplus-plutonium-for-fuel",
+      image: "https://plus.unsplash.com/premium_photo-1682148233099-e9de9e59b081?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+{
+ id: 21,
+ category: "Solar",
+ title: "US Solar Installations Maintain Growth Trend",
+ date: "Mar 15, 2026",
+ summary: "Developers connected new projects across multiple regions.",
+       link: "https://www.ironridge.com/2026/01/01/ready-for-feoc-compliance-we-have-you-covered/?gad_source=1&gad_campaignid=23462009918",
+      image: "https://images.unsplash.com/photo-1668097613572-40b7c11c8727?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+
+{   
+ id: 24,
+ category: "Policy",
+ title: "Energy Security Programs Receive Expanded Funding",
+ date: "Mar 25, 2026",
+ summary: "Federal initiatives focused on domestic energy resilience.",
+      link: "https://www.catf.us/resource/federal-funding-programs-clean-energy-deployment/",
+      image: "https://images.unsplash.com/photo-1659290542154-82c97bdab2fd?q=80&w=1180&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+{
+ id: 25,
+ category: "Renewables",
+ title: "Wind Turbine Manufacturing Expands in Midwest",
+ date: "Apr 01, 2026",
+ summary: "New facilities were announced to meet growing turbine demand.",
+     link: "https://thebusinessdownload.com/nordex-brings-manufacturing-jobs-back-to-iowa/",
+      image: "https://images.unsplash.com/photo-1546883648-8c5648200abc?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+{
+ id: 26,
+ category: "Grid",
+ title: "Regional Utilities Launch Reliability Investments",
+ date: "Apr 04, 2026",
+ summary: "Companies announced upgrades to critical transmission networks.",
+   link: "https://www.spglobal.com/market-intelligence/en/news-insights/research/as-ira-drives-renewables-investment-attention-turns-to-transmission-upgrades",
+      image: "https://images.unsplash.com/photo-1622103146053-f37729bc9f62?q=80&w=1286&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+{
+ id: 27,
+ category: "Solar",
+ title: "Utility Solar Pipeline Exceeds Expectations",
+ date: "Apr 08, 2026",
+ summary: "Developers reported strong construction activity nationwide.",
+   link: "http://pv-tech.org/eia-us-add-record-43-4gw-new-utility-scale-solar-pv-capacity-2026/",
+      image: "https://images.unsplash.com/photo-1563630381190-77c336ea545a?q=80&w=389&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+{
+ id: 28,
+ category: "Nuclear",
+ title: "Industry Consortium Targets Fuel Cycle Expansion",
+ date: "Apr 12, 2026",
+ summary: "More than 90 companies joined efforts to strengthen nuclear supply chains.",
+  link: "https://world-nuclear.org/news-and-media/association-news/world-nuclear-fuel-cycle-2026-ten-highlights-from-a-sector-ready-to-act",
+      image: "https://images.unsplash.com/photo-1717386255773-1e3037c81788?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+{
+ id: 29,
+ category: "Oil",
+ title: "US Refining Margins Improve in Spring Quarter",
+ date: "Apr 15, 2026",
+ summary: "Refiners benefited from stable crude supplies and fuel demand.",
+   link: "https://www.reuters.com/business/energy/us-refiners-first-quarter-profits-expected-jump-war-lifts-fuel-margins-2026-04-27/",
+      image: "https://images.unsplash.com/photo-1647427060118-4911c9821b82?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+{
+ id: 30,
+ category: "Hydrogen",
+ title: "Industrial Hydrogen Projects Move Toward Construction",
+ date: "Apr 18, 2026",
+ summary: "Several large-scale facilities entered final planning stages.",
+    link: "https://globalhydrogenhub.com/hydrogen-project-movement-signals-continued-progress-across-the-global-pipeline.html",
+      image: "https://images.unsplash.com/photo-1455165814004-1126a7199f9b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+
+{
+ id: 32,
+ category: "Grid",
+ title: "Battery Storage Capacity Doubles from Prior Year",
+ date: "Apr 24, 2026",
+ summary: "Energy storage growth continued to reshape grid operations.",
+     link: "https://www.iea.org/commentaries/battery-storage-is-scaling-up-and-taking-on-a-larger-system-role",
+      image: "https://plus.unsplash.com/premium_photo-1682144333631-eac578433ea1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+
+{
+ id: 34,
+ category: "Nuclear",
+ title: "US Nuclear Renaissance Gains Momentum",
+ date: "May 05, 2026",
+ summary: "DOE highlighted progress across fuel, reactor, and supply chain programs.",
+      link: "https://www.morganstanley.com/insights/articles/nuclear-energy-investment-renaissance-2050",
+      image: "https://images.unsplash.com/photo-1511454493857-0a29f2c023c7?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+
+{
+ id: 36,
+ category: "Oil & Gas",
+ title: "Pipeline Operators Announce Expansion Projects",
+ date: "May 10, 2026",
+ summary: "Companies moved ahead with new transportation infrastructure.",
+       link: "https://www.cruxinvestor.com/posts/middle-east-export-expansion-drives-infrastructure-demand-as-iraq-lifts-pipeline-capacity-to-770-000-bpd",
+      image: "https://images.unsplash.com/photo-1507823690283-48b0929e727b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+{
+ id: 37,
+ category: "Grid",
+ title: "Data Center Growth Reshapes Electricity Forecasts",
+ date: "May 12, 2026",
+ summary: "Utilities revised long-term demand projections upward.",
+     link: "https://www.spglobal.com/energy/en/news-research/latest-news/electric-power/101425-data-center-grid-power-demand-to-rise-22-in-2025-nearly-triple-by-2030",
+      image: "https://images.unsplash.com/photo-1584169417032-d34e8d805e8b?q=80&w=1309&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+
+{
+ id: 39,
+ category: "Nuclear",
+ title: "Advanced Reactor Developers Secure Additional Funding",
+ date: "May 18, 2026",
+ summary: "Private investment continued flowing into next-generation nuclear technologies.",
+   link: "https://arpa-e.energy.gov/news-and-events/news-and-insights/department-energy-announces-50-million-accelerate-development-transuranic-fuels-advanced-reactors",
+      image: "https://plus.unsplash.com/premium_photo-1661898205432-d648667b9c76?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+
+
+{
+ id: 42,
+ category: "Infrastructure",
+ title: "Transmission Upgrades Support Renewable Growth",
+ date: "May 25, 2026",
+ summary: "Utilities expanded grid connections for new generation assets.",
+    link: "https://rmi.org/resources/fast-efficient-solutions-to-meet-electricity-demand-growth/",
+      image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+{
+ id: 43,
+ category: "Natural Gas",
+ title: "EIA Projects Record US Natural Gas Output",
+ date: "Jun 09, 2026",
+ summary: "Federal forecasts show production and demand reaching record highs in 2026.",
+  link: "https://www.reuters.com/business/energy/us-natgas-output-demand-hit-record-highs-2026-eia-says-2026-06-09/",
+      image: "https://plus.unsplash.com/premium_photo-1664299488927-4352e3d2a71e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+
+{
+ id: 45,
+ category: "Climate",
+ title: "States Reassess Energy Transition Policies",
+ date: "Jun 04, 2026",
+ summary: "Several states reviewed energy affordability and reliability goals.",
+   link: "https://www.cbpp.org/research/climate-change/states-should-support-an-energy-system-that-is-affordable-safe-and-reliable",
+      image: "https://plus.unsplash.com/premium_photo-1682148777981-02e7c4bd0138?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+
+{
+ id: 47,
+ category: "Nuclear",
+ title: "US-South Korea Hold Nuclear Deterrence Talks",
+ date: "Jun 11, 2026",
+ summary: "Officials discussed nuclear readiness and regional security cooperation.",
+    link: "https://www.reuters.com/world/asia-pacific/us-south-korea-hold-nuclear-deterrence-talks-north-korea-expands-arms-push-2026-06-11/",
+      image: "https://images.unsplash.com/photo-1508433957232-3107f5fd5995?q=80&w=1186&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+{
+ id: 48,
+ category: "Grid",
+ title: "Utilities Accelerate Summer Reliability Planning",
+ date: "Jun 11, 2026",
+ summary: "Grid operators prepare for peak seasonal electricity demand.",
+     link: "https://www.aesindiana.com/press-release/aes-indiana-prepared-deliver-reliable-affordable-energy-during-summer-2026-demands",
+      image: "https://images.unsplash.com/photo-1696197302705-7c2cc6a7e8ac?q=80&w=1314&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    
+},
+
+
+
+  
     {
       id: 1,
       category: "Geopolitics",
@@ -590,7 +911,7 @@ const NewsPage = () => {
 
                 <div className="w-full md:w-2/3 space-y-4">
                   <div className="flex items-center gap-4">
-                   <span className="text-slate-400 text-sm font-medium">{news.date}</span>
+                
                   </div>
                   
                   <h2 className="text-3xl font-black text-[#0A3161] tracking-tight uppercase group-hover:text-[#B31942] transition-colors">

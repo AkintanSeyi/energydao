@@ -65,10 +65,10 @@ const EnergyLandingPage = () => {
     {/* Fixed: removed flex-col and kept sm:flex-row behavior for all screen sizes */}
     <div className="flex justify-center gap-4">
       <button 
-        onClick={() => navigate("/contact-us")} 
+        onClick={() => navigate("/signup")} 
         className="rounded-full bg-white px-10 py-4 font-bold text-[#0A3161] shadow-xl hover:scale-105 transition-all whitespace-nowrap"
       >
-        Contact Us
+        Get Started 
       </button>
     </div>
   </div>
@@ -83,23 +83,23 @@ const EnergyLandingPage = () => {
               Infrastructure Recovery & Energy Capacity Expansion
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-slate-600">
-          Energy DAO is a decentralized investment program established to strengthen the full spectrum of American energy infrastructure. Spanning traditional oil and gas, nuclear energy, solar generation, and advanced battery manufacturing, the program enables coordinated capital deployment into projects essential to U.S. national security, economic resilience, and long-term energy independence.   </p>
+          Energy DAO is a decentralized program established to strengthen the full spectrum of American energy infrastructure. Spanning traditional oil and gas, nuclear energy, solar generation, and advanced battery manufacturing, the program enables coordinated capital deployment into projects essential to U.S. national security, economic resilience, and long-term energy independence.   </p>
             <p className="mt-4 text-lg leading-relaxed text-slate-600">
-        Authorized and supported by the U.S. Department of State, in partnership with the U.S. Department of Energy, Energy DAO advances domestic energy sovereignty and the reshoring of critical infrastructure. By connecting innovation with physical asset development, the program mobilizes institutional-scale investment to expand, secure, and modernize America’s energy system.
+        Authorized and supported by the U.S. Department of State, in partnership with the U.S. Department of Energy, Energy DAO advances domestic energy sovereignty and the reshoring of critical infrastructure. By connecting innovation with physical asset development, the program mobilizes institutional-scale to expand, secure, and modernize America’s energy system.
         </p>    
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="p-5 rounded-xl bg-slate-50 border border-slate-100 hover:border-[#B31942] transition-colors">
                 <div className="h-8 w-8 mb-3 flex items-center justify-center rounded-full bg-[#0A3161] text-white text-[10px] font-bold">GOV</div>
                 <h4 className="font-bold text-[#0A3161] text-sm uppercase mb-1">Federal Alignment</h4>
                 <p className="text-xs text-slate-500">Operated in coordination with national energy security and independence protocols.</p>
-              </div>
+              </div>     
               <div className="p-5 rounded-xl bg-slate-50 border border-slate-100 hover:border-[#B31942] transition-colors">
                 <div className="h-8 w-8 mb-3 flex items-center justify-center rounded-full bg-[#B31942] text-white text-[10px] font-bold">DAO</div>
                 <h4 className="font-bold text-[#0A3161] text-sm uppercase mb-1">Strategic Scale-Up</h4>
-             <p className="text-xs text-slate-500">
+             <p className="text-xs text-slate-500">       
    Scaling vetted energy companies to modernize infrastructure and accelerate production capacity</p></div>
-            </div>
-          </div>
+            </div>        
+          </div>        
 
           <div className="relative order-1 md:order-2">
             <div className="absolute -inset-4 bg-slate-100 rounded-[2rem] -rotate-2"></div>
@@ -126,7 +126,7 @@ const EnergyLandingPage = () => {
             </p>
             
             <p>
-              By providing a platform for individuals to invest directly in the country’s energy infrastructure, we bridge the gap between private capital and national progress. Supported by the U.S. State Department, this initiative ensures domestic energy sovereignty and the reshoring of critical infrastructure.
+              By providing a platform for individuals to commit directly in the country’s energy infrastructure, we bridge the gap between private capital and national progress. Supported by the U.S. State Department, this initiative ensures domestic energy sovereignty and the reshoring of critical infrastructure.
             </p>
 
 
@@ -142,7 +142,7 @@ const EnergyLandingPage = () => {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 flex items-end justify-between">
             <h2 className="text-3xl font-bold text-[#0A3161]">News</h2>
-            <p onClick={() => navigate("/news")} className="font-bold text-[#0A3161] hover:text-[#B31942] transition-colors">
+            <p onClick={() => navigate("/news")} className="font-bold cursor-pointer text-[#0A3161] hover:text-[#B31942] transition-colors">
               Read More →
             </p>
           </div>
@@ -197,7 +197,7 @@ const EnergyLandingPage = () => {
       {/* Stat 1: Capital */}
       <div className="text-center md:border-r border-white/10 py-8">
         <h3 className="text-6xl md:text-7xl font-black tracking-tighter text-white">
-          $200M
+          $1.3B
         </h3>
         <p className="mt-4 text-[10px] font-bold uppercase tracking-[0.3em] text-blue-200 opacity-80">
           Total Capital Deployed
@@ -251,7 +251,7 @@ const EnergyLandingPage = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-               
+               energydao@energy.gov
               </div>
             </div>
 
@@ -270,7 +270,7 @@ const EnergyLandingPage = () => {
 
           <div className="mt-16 pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-[11px] font-bold uppercase tracking-widest text-slate-500">
-              © 2026 Energy DAO. All rights reservedss.
+              © 2026 Energy DAO. All rights reserved.
             </p>
         
           </div>

@@ -5,10 +5,10 @@ const Impact = () => {
   const navigate = useNavigate();
 
   const stats = [
-    { label: "Capital Deployed", value: "$200M", detail: "" },
+    { label: "Capital Deployed", value: "$1.3B", detail: "" },
     { label: "Jobs Created", value: "12,400+", detail: "" },
     { label: "Energy Output", value: "+18%", detail: "" },
-    { label: "Plants Rescued", value: "80", detail: "" }
+   
   ];
 
   return (
@@ -39,7 +39,7 @@ const Impact = () => {
       {/* 2. STATS GRID */}
       <section className="relative -mt-20 z-30 px-8">
         <div className="mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-1 bg-slate-100 p-1 shadow-2xl rounded-2xl overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-1 bg-slate-100 p-1 shadow-2xl rounded-2xl overflow-hidden">
             {stats.map((stat, index) => (
               <div key={index} className="bg-white p-10 text-center">
                 <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">{stat.label}</p>

@@ -120,7 +120,7 @@ const MissionPage = () => {
                 <div className="h-10 w-10 shrink-0 rounded-full bg-[#0A3161] flex items-center justify-center text-white font-bold text-xs">DOE</div>
                 <div>
                   <h4 className="font-bold text-[#0A3161]">Technical Oversight</h4>
-                  <p className="text-sm text-slate-500">Utilizing DOE research and data to ensure every investment targets the most productive reserves.</p>
+                  <p className="text-sm text-slate-500">Utilizing DOE research and data to ensure every commitment targets the most productive reserves.</p>
                 </div>
               </div>
               <div className="flex gap-4 p-5 rounded-xl bg-slate-50 border border-slate-100">
